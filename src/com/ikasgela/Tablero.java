@@ -83,16 +83,16 @@ public class Tablero {
 
         if (current.empate()) {
             JOptionPane.showMessageDialog(null, "EMPATE", "Resultado",
-                    JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.INFORMATION_MESSAGE);
             current.reset();
             caracter = "";
         } else if (current.hayGanador() != -1) {
             if (current.hayGanador() == 0) {
                 JOptionPane.showMessageDialog(null, "Ganador jugador 2", "Resultado",
-                        JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.INFORMATION_MESSAGE);
             } else {
                 JOptionPane.showMessageDialog(null, "Ganador jugador 1", "Resultado",
-                        JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.INFORMATION_MESSAGE);
             }
             current.reset();
             caracter = "";
